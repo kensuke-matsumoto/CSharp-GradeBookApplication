@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GradeBook.GradeBooks
+﻿namespace GradeBook.GradeBooks
 {
     class StandardGradeBook : BaseGradeBook
     {
-        public string name;
-        public StandardGradeBook()
+        public StandardGradeBook(string name):base(name)
         {
-            name = :base(name) ;
+            Type = Enums.GradeBookType.Standard;
 
 
         }
