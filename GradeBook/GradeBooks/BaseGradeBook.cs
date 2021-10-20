@@ -11,7 +11,7 @@ namespace GradeBook.GradeBooks
 {
     public abstract class BaseGradeBook
     {
-        public bool IsWeighted { get; set}
+        public bool IsWeighted { get; set; }
         public string Name { get; set; }
         public List<Student> Students { get; set; }
         public GradeBookType Type { get; set; }
@@ -114,7 +114,7 @@ namespace GradeBook.GradeBooks
             switch (letterGrade)
             {
                 case 'A':
-                    gpa = 4
+                    gpa = 4;
                     break;
                 case 'B':
                     gpa = 3;
